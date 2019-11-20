@@ -1,8 +1,19 @@
 // Array of club card objects
-const clubs = [{ "A": 1 || 11 }, { "2": 2 }, { "3": 3 }, { "4": 4 }, { "5": 5 }, { "6": 6 }, { "7": 7 }, { "8": 8 }, { "9": 9 }, { "10": 10 }, { "J": 10 }, { "Q": 10 }, { "K": 10 }];
+const clubs = [
+  { name: "A", num: 1 || 11 }, { name: "2", num: 2 }, { name: "3", num: 3 }, { name: "4", num: 4 }, { name: "5", num: 5 }, { name: "6", num: 6 }, { name: "7", num: 7 }, { name: "8", num: 8 }, { name: "9", num: 9 }, { name: "10", num: 10 }, { name: "J", num: 10 }, { name: "Q", num: 10 }, { name: "K", num: 10 }];
 // Array of diamond card objects
-const diamonds = [{ "A": 1 || 11 }, { "2": 2 }, { "3": 3 }, { "4": 4 }, { "5": 5 }, { "6": 6 }, { "7": 7 }, { "8": 8 }, { "9": 9 }, { "10": 10 }, { "J": 10 }, { "Q": 10 }, { "K": 10 }];
+const diamonds = [
+  { name: "A", num: 1 || 11 }, { name: "2", num: 2 }, { name: "3", num: 3 }, { name: "4", num: 4 }, { name: "5", num: 5 }, { name: "6", num: 6 }, { name: "7", num: 7 }, { name: "8", num: 8 }, { name: "9", num: 9 }, { name: "10", num: 10 }, { name: "J", num: 10 }, { name: "Q", num: 10 }, { name: "K", num: 10 }];
 // Array of heart card objects
-const hearts = [{ "A": 1 || 11 }, { "2": 2 }, { "3": 3 }, { "4": 4 }, { "5": 5 }, { "6": 6 }, { "7": 7 }, { "8": 8 }, { "9": 9 }, { "10": 10 }, { "J": 10 }, { "Q": 10 }, { "K": 10 }];
+const hearts = [
+  { name: "A", num: 1 || 11 }, { name: "2", num: 2 }, { name: "3", num: 3 }, { name: "4", num: 4 }, { name: "5", num: 5 }, { name: "6", num: 6 }, { name: "7", num: 7 }, { name: "8", num: 8 }, { name: "9", num: 9 }, { name: "10", num: 10 }, { name: "J", num: 10 }, { name: "Q", num: 10 }, { name: "K", num: 10 }];
 // Array of spades card objects
-const spades = [{ "A": 1 || 11 }, { "2": 2 }, { "3": 3 }, { "4": 4 }, { "5": 5 }, { "6": 6 }, { "7": 7 }, { "8": 8 }, { "9": 9 }, { "10": 10 }, { "J": 10 }, { "Q": 10 }, { "K": 10 }];
+const spades = [
+  { name: "A", num: 1 || 11 }, { name: "2", num: 2 }, { name: "3", num: 3 }, { name: "4", num: 4 }, { name: "5", num: 5 }, { name: "6", num: 6 }, { name: "7", num: 7 }, { name: "8", num: 8 }, { name: "9", num: 9 }, { name: "10", num: 10 }, { name: "J", num: 10 }, { name: "Q", num: 10 }, { name: "K", num: 10 }];
+
+// CPU Points
+const cpuPoints = 10
+// User Points
+const userPoints = 10
+// Start game Button
+const gameStartBtn = document.getElementById('gameStartBtn');
