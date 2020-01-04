@@ -2,7 +2,7 @@
 <html lang="en">
 
 <head>
-  <title>BlackJack</title>
+  <title>Black Jack</title>
   <!-- Required meta tags -->
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -21,7 +21,7 @@
       <div class="col-md-1"></div>
       <div class="col-md-10">
         <div class="card p-3">
-          <h4>Instructions:</h4>
+          <!-- <h4>Instructions:</h4>
           <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident error placeat neque veritatis amet
             minima ipsa vitae? Quasi minima dolorem quod, dolore, in quia quam animi vero assumenda porro similique
             voluptas nemo eius reprehenderit modi, at maiores illo neque repellat accusantium possimus! Incidunt
@@ -32,7 +32,7 @@
             voluptatibus quibusdam omnis dolorem, ipsam quo eaque quasi beatae. Delectus iusto aperiam adipisci, vero
             architecto eius beatae quisquam dicta iste magnam reiciendis similique tenetur atque tempore corporis nihil
             provident iure non excepturi eveniet quia, odit voluptates a. Harum minus incidunt debitis veniam aperiam,
-            quia pariatur deleniti delectus minima. Id ea quisquam recusandae totam autem nulla.</p>
+            quia pariatur deleniti delectus minima. Id ea quisquam recusandae totam autem nulla.</p> -->
           <button id="gameStartBtn" class="btn-danger btn-block py-2">Start Game!</button>
         </div>
       </div>
@@ -41,18 +41,18 @@
     <div class="row mb-4">
       <div class="col-md-4">
         <div class="card">
-          <div class="card-header">Computers Score:</div>
+          <div class="card-header">Computers Winnings:</div>
           <div class="card-body">
-            <h5>Points: <span id="cpuPoints"></span></h5>
+            <h5>Bank: $<span id="dealersBank"></span></h5>
           </div>
         </div>
       </div>
       <div class="col-md-8">
         <div class="card">
-          <div class="card-header">Computers Hand:</div>
+          <div class="card-header">Dealers Hand:</div>
           <div class="card-body">
-            <span id="cpuFirstDraw"></span>
-            <span id="cpuHand"></span>
+            <span id="dealersDraw"></span>
+            <span id="dealersHand"></span>
           </div>
         </div>
       </div>
@@ -60,18 +60,20 @@
     <div class="row mb-4">
       <div class="col-md-8">
         <div class="card">
-          <div class="card-header">Users Hand:</div>
+          <div class="card-header">Players Hand:</div>
           <div class="card-body">
-            <span id="userFirstDraw"></span>
-            <span id="userHand"></span>
+            <div id="hitMe"></div>
+            <div id="stay"></div>
+            <span id="playersDraw"></span>
+            <span id="playersHand"></span>
           </div>
         </div>
       </div>
       <div class="col-md-4">
         <div class="card">
-          <div class="card-header">Users Score:</div>
+          <div class="card-header">Players Winnings: <span id="playersWins"></span></div>
           <div class="card-body">
-            <h5>Points: <span id="userPoints"></span></h5>
+            <h5>Bank: $<span id="playersBank"></span></h5>
           </div>
         </div>
       </div>
