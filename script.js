@@ -36,6 +36,7 @@ function dealCards() {
   AddCardValues();
   playersRound();
   dealersRound();
+  showCards();
   console.log({ dealersHand, playersHand })
 
   gameStartBtn.disabled = true;
@@ -80,6 +81,18 @@ function showPlayerButtons() {
   var stay = document.createTextNode('Stay');
   stayButton.appendChild(stay);
   document.getElementById("hitMe").appendChild(stayButton);
+}
+
+function showCards() {
+  card_location = document.getElementById("playersHand");
+  playersHand.forEach(card => {
+    const div = document.createElement('div');
+    div.classList.add('card');
+    div.classList.add('p-5');
+    const playersCardNum = document.createTextNode(card.name);
+    div.appendChild(playersCardNum);
+    card_location.appendChild(div);
+  });
 }
 
 // Players Round
